@@ -1,0 +1,50 @@
+body {
+    padding:0;
+    margin:0;
+    color:white;
+    background-color: #0D1117;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+}
+
+.accent {
+    color: #58A6FF;
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    color:white;
+    background-color: #0D1117;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+}
+
+/* Make the header take full viewport height */
+header {
+    min-height: 100vh;
+    display: flex;
+    align-items: center; /* Vertically centers the container */
+}
+
+/* Center the text inside its column */
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically centers the h1 and p */
+}
+
+/* Center the image inside its column */
+.hero-image {
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center;     /* Vertical centering */
+}
+
+.hero-image img {
+    max-width: 45%; /* Makes it responsive */
+    height: auto;
+}
