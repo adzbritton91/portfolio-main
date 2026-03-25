@@ -48,8 +48,9 @@ header {
 }
 
 .hero-image img {
-    max-width: 45%; /* Makes it responsive */
+    max-width: 50%; /* Makes it responsive */
     height: auto;
+    border-radius: 10%;
 }
 
 .projects, .skills, .about {
