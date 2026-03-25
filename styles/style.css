@@ -7,13 +7,16 @@ body {
     font-style: normal;
 }
 
+.heading {
+    font-family: "Montserrat", sans-serif;
+}
+
 .accent {
     color: #58A6FF;
 }
 
-.vertical-align {
-    display: flex;
-    align-items: center;
+.underline {
+    text-decoration: underline;
 }
 
 nav {
@@ -47,4 +50,46 @@ header {
 .hero-image img {
     max-width: 45%; /* Makes it responsive */
     height: auto;
+}
+
+.projects, .skills, .about {
+    width:85%;
+    margin: 0 auto;
+    margin-bottom:75px;
+}
+
+.projects h2, .about h2 {
+    padding-bottom: 30px;
+}
+
+.card {
+    background-color: #0D1117;
+    color:white;
+}
+
+.btn {
+    background-color: #F78166;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #58A6FF;
+    color: white;
+}
+
+.skill {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* space between icons */
+    margin-top: 20px;
+}
+
+.skill i {
+    font-size: 3rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.skill i:hover {
+    transform: scale(1.2);
+    color: #58A6FF; /* your accent color */
 }
