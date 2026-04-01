@@ -1,9 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Adam Britton — front-end web developer portfolio: projects, skills, and contact. Responsive layouts, modern UI, and growing full-stack experience.">
     <title>Adam Britton - Web Developer</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <meta property="og:title" content="Adam Britton — Web Developer">
+    <meta property="og:description" content="Front-end developer focused on responsive interfaces and modern web experiences. Projects, skills, and contact.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://adzbritton91.github.io/portfolio-main/">
+    <meta property="og:image" content="https://adzbritton91.github.io/portfolio-main/images/adam-illustrated.png">
+    <meta property="og:image:alt" content="Illustrated portrait of Adam Britton">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Adam Britton — Web Developer">
+    <meta name="twitter:description" content="Front-end developer focused on responsive interfaces and modern web experiences.">
+    <meta name="twitter:image" content="https://adzbritton91.github.io/portfolio-main/images/adam-illustrated.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="styles/style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,7 +24,7 @@
     <script src="https://kit.fontawesome.com/37d26350cf.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Adam Britton</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,28 +35,43 @@
                     <a class="nav-link" href="#projects">Projects</a>
                     <a class="nav-link" href="#skills">Skills</a>
                     <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                 </div>
             </div>
         </div>
     </nav>
-    <header class="row">
-        <div class="col-md-6 hero-text">
-            <h1 class="text-center align-self-center heading">Adam Britton <span class="accent underline">Web Developer</span></h1>
-            <p class="text-center align-self-center">Front-end & full-stack developer passionate about clean, modern web applications.</p>
-        </div>
-        <div class="col-md-6 hero-image">
-            <img src="images/adam-illustrated.png">
+    <main>
+    <header>
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-6 hero-text">
+                    <h1 class="text-center align-self-center heading">Adam Britton <span class="accent underline">Web Developer</span></h1>
+                    <p class="text-center align-self-center mb-3">Front-end developer focused on responsive interfaces and clean UI, with growing experience in APIs and full-stack workflows.</p>
+                    <div class="hero-ctas d-flex flex-wrap gap-2 justify-content-center pt-2">
+                        <a class="btn" href="#projects">View projects</a>
+                        <a class="btn btn-outline-light" href="#contact">Get in touch</a>
+                    </div>
+                </div>
+                <div class="col-md-6 hero-image">
+                    <img src="images/adam-illustrated.png" alt="Illustrated portrait of Adam Britton">
+                </div>
+            </div>
         </div>
     </header>
-    <section class="projects" id="projects">
+    <section class="projects container" id="projects">
         <h2 class="text-center heading underline accent">Projects</h2>
             <div class="row row-cols-1 row-cols-md-3 g-4 align-items-stretch">
                 <div class="col d-flex">
                     <div class="card h-100">
-                        <img src="images/portfolio1.png" class="card-img-top" alt="screenshot of main project">
+                        <img src="images/portfolio1.png" class="card-img-top" alt="Screenshot of the Umbrella Corporation demo site homepage">
                         <div class="card-body text-center d-flex flex-column">
                             <h5 class="card-title">Umbrella Corporation</h5>
-                            <p class="card-text">A fan‑inspired demo website styled after the Resident Evil universe, built as a hands‑on project to explore layout, responsive design, and interactive content — clearly marked as a personal learning project and not an official site.</p>
+                            <p class="card-text small text-secondary text-start mb-2"><strong class="text-white">Stack:</strong> HTML, CSS, JavaScript, responsive layout, GitHub Pages</p>
+                            <ul class="card-text small text-start mb-3 ps-3">
+                                <li>Built a multi-section marketing-style layout with responsive breakpoints and interactive elements.</li>
+                                <li>Deployed as a static site; clearly labeled as a personal learning project (not an official brand site).</li>
+                            </ul>
+                            <p class="card-text">Fan‑inspired Resident Evil universe demo — exploring narrative-led layout and interactive content in the browser.</p>
                             <div class="mt-auto">
                                 <a href="https://adzbritton91.github.io/adzbritton91.resident-evil.io/" class="btn">View project</a>
                                 <a href="https://github.com/adzbritton91/adzbritton91.resident-evil.io" class="btn">View Git</a>    
@@ -54,57 +81,78 @@
                 </div>
                 <div class="col d-flex">
                     <div class="card h-100">
-                        <img src="images/portfolio1.png" class="card-img-top" alt="screenshot of main project">
+                        <img src="images/placeholder-movie-app.svg" class="card-img-top" alt="Graphic placeholder for the upcoming movie app project">
                         <div class="card-body text-center d-flex flex-column">
-                            <h5 class="card-title">Coming soon - Movie App</h5>
-                            <p class="card-text">Keep checking back for progress of this project</p>
+                            <h5 class="card-title">Coming soon — Movie App</h5>
+                            <p class="card-text small text-secondary text-start mb-2"><strong class="text-white">Planned stack:</strong> React, REST or GraphQL API, responsive CSS</p>
+                            <p class="card-text text-start mb-0">Browse and search films with a data-driven UI — in progress. Check back for live demo and repository links.</p>
                             <div class="mt-auto">
-                                <a href="..." class="btn">View project</a>
-                                <a href="..." class="btn">View Git</a>    
+                                <p class="text-secondary small mb-0" aria-live="polite">Project and repo links coming soon</p>
                             </div>                         
                         </div>
                     </div>
                 </div>
                 <div class="col d-flex">
                     <div class="card h-100">
-                        <img src="images/portfolio1.png" class="card-img-top" alt="screenshot of main project">
+                        <img src="images/placeholder-weather-app.svg" class="card-img-top" alt="Graphic placeholder for the upcoming weather app project">
                         <div class="card-body text-center d-flex flex-column">
-                            <h5 class="card-title">Coming soon - Weather App</h5>
-                            <p class="card-text">Keep checking back for progress of this project</p>
+                            <h5 class="card-title">Coming soon — Weather App</h5>
+                            <p class="card-text small text-secondary text-start mb-2"><strong class="text-white">Planned stack:</strong> JavaScript, weather API, responsive layout</p>
+                            <p class="card-text text-start mb-0">Location-based forecasts and a clean dashboard UI — in progress. Links will appear here when the project is published.</p>
                             <div class="mt-auto">
-                                <a href="..." class="btn">View project</a>
-                                <a href="..." class="btn">View Git</a>    
+                                <p class="text-secondary small mb-0" aria-live="polite">Project and repo links coming soon</p>
                             </div>    
                         </div>
                     </div>
                 </div>
             </div>
     </section>
-    <section class="skills" id="skills">
+    <section class="skills container" id="skills">
         <h2 class="text-center heading underline accent">Skills</h2>
-        <div class="skill">
-            <i class="fa-brands fa-html5"></i>
-            <i class="fa-brands fa-css"></i>
-            <i class="fa-brands fa-js"></i>
-            <i class="fa-brands fa-react"></i>
-            <i class="fa-brands fa-bootstrap"></i>
+        <div class="skill" aria-label="Technologies">
+            <i class="fa-brands fa-html5" aria-hidden="true" title="HTML5"></i>
+            <i class="fa-brands fa-css3-alt" aria-hidden="true" title="CSS3"></i>
+            <i class="fa-brands fa-js" aria-hidden="true" title="JavaScript"></i>
+            <i class="fa-brands fa-react" aria-hidden="true" title="React"></i>
+            <i class="fa-brands fa-bootstrap" aria-hidden="true" title="Bootstrap"></i>
+            <i class="fa-brands fa-node-js" aria-hidden="true" title="Node.js"></i>
+            <i class="fa-brands fa-git-alt" aria-hidden="true" title="Git"></i>
         </div>
     </section>
-    <section class="about" id="about">
+    <section class="about container" id="about">
         <h2 class="text-center heading underline accent">About Me</h2>
-        <div class="row">
+        <div class="row gx-4">
             <div class="col-md-6 text-center hero-image">
-                <img src="images/adam-code.png">
+                <img src="images/adam-code.png" alt="Adam working with code">
             </div>
-            <div class="col-md-6 text-center align-self-center"><p>My journey into web development started with a simple curiosity and has grown into a genuine passion for creating things from scratch. I enjoy bringing ideas to life in the browser and seeing code turn into real, interactive experiences.</p></br>
+            <div class="col-md-6 text-center align-self-center"><p>My journey into web development started with a simple curiosity and has grown into a genuine passion for creating things from scratch. I enjoy bringing ideas to life in the browser and seeing code turn into real, interactive experiences.</p>
 
-            <p>I focus on writing clean, efficient code and take a problem-solving approach to every project. Whether it’s debugging an issue or improving performance, I enjoy the process just as much as the result.</p></br>
+            <p>I focus on writing clean, efficient code and take a problem-solving approach to every project. Whether it’s debugging an issue or improving performance, I enjoy the process just as much as the result.</p>
 
             <p>I’m driven by constant growth and the challenge of becoming a better developer with every project I take on.</p>
             </div>
 
         </div>
     </section>
+    </main>
+    <footer class="site-footer border-top border-secondary mt-5" id="contact">
+        <div class="container py-5">
+            <h2 class="text-center heading accent mb-2">Contact</h2>
+            <p class="text-center text-secondary mb-4">Open to opportunities — get in touch or download my résumé.</p>
+            <ul class="list-unstyled d-flex flex-wrap justify-content-center gap-3 mb-4">
+                <li>
+                    <a class="btn" href="mailto:adzbritton91@gmail.com"><i class="fa-solid fa-envelope me-2" aria-hidden="true"></i>Email</a>
+                </li>
+                <li>
+                    <a class="btn btn-outline-light" href="https://www.linkedin.com/in/adamjbritton/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in me-2" aria-hidden="true"></i>LinkedIn</a>
+                </li>
+                <li>
+                    <a class="btn btn-outline-light" href="https://github.com/adzbritton91" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github me-2" aria-hidden="true"></i>GitHub</a>
+                </li>
+            </ul>
+            <p class="text-center mb-0"><a class="accent text-decoration-underline fw-semibold" href="assets/Adam%20Britton%20CV%20-%202026.pdf" download="Adam-Britton-CV-2026.pdf">Download CV (PDF)</a></p>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="scripts/script.js"></script>
 </body>

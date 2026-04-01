@@ -1,3 +1,13 @@
+html {
+    scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
 body {
     padding:0;
     margin:0;
@@ -54,18 +64,36 @@ header {
 }
 
 .projects, .skills, .about {
-    width:85%;
-    margin: 0 auto;
-    margin-bottom:75px;
+    margin-bottom: 75px;
 }
 
-.projects h2, .about h2 {
+.projects h2, .skills h2, .about h2 {
     padding-bottom: 30px;
+}
+
+.site-footer {
+    background-color: #0D1117;
+}
+
+.site-footer .btn-outline-light {
+    border-color: #58A6FF;
+    color: #e6edf3;
+}
+
+.site-footer .btn-outline-light:hover {
+    background-color: #58A6FF;
+    border-color: #58A6FF;
+    color: #0D1117;
 }
 
 .card {
     background-color: #0D1117;
     color:white;
+}
+
+/* Bootstrap .text-secondary is tuned for light surfaces; lighten for dark cards */
+.card .text-secondary {
+    color: #8b949e !important;
 }
 
 .btn {
