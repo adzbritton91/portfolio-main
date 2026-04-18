@@ -1,3 +1,10 @@
+@media only screen and (max-width: 600px) {
+    .skill {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -106,6 +113,7 @@ header {
 .skill i {
     font-size: 3rem;
     transition: transform 0.3s ease, color 0.3s ease;
+    display: flex;
 }
 
 .skill i:hover {
